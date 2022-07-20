@@ -16,7 +16,7 @@ public class LinkList {
     }
 
     public void display() {
-        MyNode current = (MyNode) head;
+        INode current = (INode) head;
         if (head == null)
             System.out.println("Linked List is empty");
         System.out.println("Nodes Are");
@@ -29,5 +29,16 @@ public class LinkList {
             current = current.getNext();
         }
 
+    }
+    public void append(MyNode newNode) {
+        if (head == null) {
+            head = newNode;
+        }
+        if (tail == null) {
+            tail = newNode;
+        }else {
+            tail.setNext(newNode);
+            tail = newNode;
+        }
     }
 }
