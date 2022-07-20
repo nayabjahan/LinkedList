@@ -2,7 +2,7 @@ package com.blz.LinkedList;
 
 public class MyNode <K>{
     private K key;
-    private MyNode next;
+    public MyNode next;
 
     public K getKey() {
         return key;
