@@ -38,5 +38,11 @@ public class LinkedListMain {
              System.out.println("Final linked list is:");
              myLinkedList.display();
 
+             deletedNode = myLinkedList.deleteLastNode();
+            System.out.println("The deleted key value is:"+deletedNode.getKey());
+            myLinkedList.display();
+
+
     }
+
     }

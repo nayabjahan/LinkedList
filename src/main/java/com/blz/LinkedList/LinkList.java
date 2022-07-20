@@ -53,4 +53,12 @@ public class LinkList {
         return temporaryNode;
 
     }
+    public INode deleteLastNode() {
+        INode tempNode = head;
+        while (!tempNode.getNext().equals(tail)) {
+            tempNode = tempNode.getNext();
+        }
+        this.tail = (MyNode) tempNode;
+        return tail;
+    }
 }
